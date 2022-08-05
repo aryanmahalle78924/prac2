@@ -1,0 +1,95 @@
+.homePage {
+  background-color: rgb(194, 208, 208);
+
+  height: 93vh;
+  position: relative;
+  display: flex;
+  padding-top: 80px;
+}
+
+.headerName {
+  flex: 0.7;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+
+.headerName h1 {
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 80px;
+  color: rgba(90, 172, 213, 0.975);
+  font-weight: 400;
+}
+
+.headerName p {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.giffy {
+  flex: 0.3;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.buttonLearn {
+  margin-left: 42%;
+  margin-top: 19px;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 25%;
+  left: 57%;
+}
+
+.socialIcons i {
+  padding-left: 60px;
+  font-size: 50px;
+  color: rgb(75, 80, 80);
+}
+
+.socialIcons i:hover {
+  color: rgba(90, 172, 213, 0.975);
+}
+
+@media screen and (max-width: 480px) {
+  .giffy {
+    display: none;
+  }
+  .headerName {
+    position: relative;
+    width: 50%;
+    margin-left: -38%;
+    margin-top: -20%;
+  }
+  .headerName h1 {
+    position: absolute;
+    left: 12%;
+    font-size: 60px;
+  }
+
+  .headerName p {
+    font-size: 20px;
+    margin-top: 150px;
+    width: 60%;
+  }
+
+  .headerName .buttonLearn {
+    margin-left: 50px;
+  }
+
+  .socialIcons {
+    margin-left: -50%;
+    margin-bottom: -20%;
+  }
+
+  .socialIcons i {
+    font-size: 40px;
+  }
+}
